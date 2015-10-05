@@ -1,0 +1,68 @@
+#include <iostream>
+using namespace std;
+
+int sum(int n1, int n2){
+int suma = n1+n2;
+cout <<"The sum of the numbers is: " <<suma<<endl;
+return 0;
+}
+
+int dif(int n1, int n2){
+  if (n1>n2){
+int rest = n1-n2;
+cout <<"The rest of the larger number minus the smaller one is: " <<rest<<endl;
+}
+else if(n2>n1) {
+  int rest = n2-n1;
+  cout <<"The rest of the larger number minus the smaller one is: " <<rest<<endl;
+}
+return 0;
+}
+
+int prod(int n1, int n2){
+int multi = n1*n2;
+cout <<"The product of the numbers is: " <<multi<<endl;
+return 0;
+}
+
+int div(int n1, int n2){
+  if (n1>n2){
+int divi = n1/n2;
+cout <<"The division of the larger number over the smaller one is: " <<divi<<endl;
+}
+else if(n2>n1) {
+  int divi = n2/n1;
+  cout <<"The division of the larger number over the smaller one is: " <<divi<<endl;
+}
+return 0;
+}
+
+int remain(int n1, int n2){
+  if (n1>n2){
+int rem = n1%n2;
+cout <<"The remainder of the division between the larger number over the smaller one is: " <<rem<<endl;
+}
+else if(n2>n1) {
+  int rem = n2%n1;
+  cout <<"The remainder of the division between the larger number over the smaller one is: " <<rem<<endl;
+}
+return 0;
+}
+
+
+int main(){
+  int n1, n2;
+cout <<"Give me a number: "<< endl;
+cin >> n1;
+cout <<"Give me another number: "<< endl;
+cin >> n2;
+
+sum(n1, n2);
+dif(n1, n2);
+prod(n1,n2);
+div(n1,n2);
+remain (n1,n2);
+
+
+return 0;
+}
